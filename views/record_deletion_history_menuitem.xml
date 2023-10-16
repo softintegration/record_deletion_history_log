@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem action="record_deletion_history_action"
+                  id="record_deletion_history_action_menu"
+                  name="Record deletion history"
+                  parent="mail.mail_menu_technical"
+                  groups="base.user_admin"
+                  sequence="70"/>
+
+</odoo>
