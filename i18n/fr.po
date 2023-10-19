@@ -6,14 +6,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 19:52+0000\n"
-"PO-Revision-Date: 2023-10-16 19:52+0000\n"
+"POT-Creation-Date: 2023-10-19 12:42+0000\n"
+"PO-Revision-Date: 2023-10-19 12:42+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: record_deletion_history_log
+#: code:addons/record_deletion_history_log/models/base_model.py:0
+#, python-format
+msgid "<center><h1>%s</h1></center>\n"
+msgstr ""
+
+#. module: record_deletion_history_log
+#: code:addons/record_deletion_history_log/models/base_model.py:0
+#, python-format
+msgid "<tr><th><h3>Field</h3></th><th><h3>Value</h3></th></tr>\n"
+msgstr "<tr><th><h3>Champ</h3></th><th><h3>Valeur</h3></th></tr>"
 
 #. module: record_deletion_history_log
 #: model:ir.model,name:record_deletion_history_log.model_res_groups
@@ -28,7 +40,7 @@ msgstr ""
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__active
 msgid "Active"
-msgstr "Active"
+msgstr ""
 
 #. module: record_deletion_history_log
 #: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_search_view
@@ -67,22 +79,37 @@ msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__create_uid
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__create_uid
 msgid "Created by"
 msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__create_date
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__create_date
 msgid "Created on"
 msgstr ""
 
 #. module: record_deletion_history_log
+#: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_form_view
 #: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_search_view
 #: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_tree_view
 msgid "Date"
-msgstr "Date"
+msgstr ""
+
+#. module: record_deletion_history_log
+#: code:addons/record_deletion_history_log/models/record_deletion_history.py:0
+#, python-format
+msgid "Deletion history details"
+msgstr ""
+
+#. module: record_deletion_history_log
+#: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_form_view
+msgid "Details"
+msgstr "Détails"
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__display_name
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -112,7 +139,13 @@ msgid "Has Message"
 msgstr ""
 
 #. module: record_deletion_history_log
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__history_id
+msgid "History"
+msgstr ""
+
+#. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__id
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__id
 msgid "ID"
 msgstr ""
 
@@ -134,7 +167,6 @@ msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__message_has_error
-#: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -144,17 +176,25 @@ msgid "Is Follower"
 msgstr ""
 
 #. module: record_deletion_history_log
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__item_ids
+msgid "Item"
+msgstr ""
+
+#. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history____last_update
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line____last_update
 msgid "Last Modified on"
 msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__write_uid
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__write_uid
 msgid "Last Updated by"
 msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__write_date
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__write_date
 msgid "Last Updated on"
 msgstr ""
 
@@ -189,6 +229,11 @@ msgstr "Nom technique de l'objet"
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr ""
+
+#. module: record_deletion_history_log
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__name
+msgid "Name"
+msgstr "Nom"
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__activity_calendar_event_id
@@ -236,11 +281,6 @@ msgid "Number of unread messages"
 msgstr ""
 
 #. module: record_deletion_history_log
-#: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_search_view
-msgid "User"
-msgstr "Utilisateur"
-
-#. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__res_id
 msgid "Record ID"
 msgstr ""
@@ -253,19 +293,34 @@ msgid "Record deletion history"
 msgstr "Historique de suppression"
 
 #. module: record_deletion_history_log
+#: model:ir.model,name:record_deletion_history_log.model_record_deletion_history_line
+msgid "Record deletion history details"
+msgstr "Détails"
+
+#. module: record_deletion_history_log
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__record_details
+#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history_line__record_details_html
+msgid "Record details"
+msgstr "Détails de l'enregistrement"
+
+#. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__activity_user_id
 msgid "Responsible User"
 msgstr "Utilisateur"
 
 #. module: record_deletion_history_log
-#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: record_deletion_history_log
 #: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_search_view
 msgid "Search record deletion"
 msgstr "Rechercher dans l'historique de suppression"
+
+#. module: record_deletion_history_log
+#: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__user_id
@@ -277,7 +332,8 @@ msgstr "Utilisateur qui a supprimé l'enregistrement"
 msgid ""
 "This is used for the sake of display from the perspective of user experience"
 msgstr ""
-"Ceci est utilisé pour d'affichage du point de vue de l'expérience utilisateur"
+"Ceci est utilisé pour d'affichage du point de vue de l'expérience "
+"utilisateur"
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__activity_exception_decoration
@@ -296,6 +352,7 @@ msgstr ""
 
 #. module: record_deletion_history_log
 #: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__user_id
+#: model_terms:ir.ui.view,arch_db:record_deletion_history_log.record_deletion_history_search_view
 msgid "User"
 msgstr "Utilisateur"
 
@@ -305,11 +362,6 @@ msgid "View record deletion log"
 msgstr "Visualiser l'historique de suppression"
 
 #. module: record_deletion_history_log
-#: model:ir.model.fields,field_description:record_deletion_history_log.field_record_deletion_history__website_message_ids
-msgid "Website Messages"
-msgstr ""
-
-#. module: record_deletion_history_log
-#: model:ir.model.fields,help:record_deletion_history_log.field_record_deletion_history__website_message_ids
-msgid "Website communication history"
+#: model:ir.model,name:record_deletion_history_log.model_base_model_extended
+msgid "base.model.extended"
 msgstr ""

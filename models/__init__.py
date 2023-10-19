@@ -2,3 +2,4 @@
 
 from . import record_deletion_history
 from . import res_users
+from . import base_model

@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_record_deletion_history_user,record.deletion.history,model_record_deletion_history,record_deletion_history_log.group_record_deletion_log,1,0,0,0
+access_record_deletion_history_line_user,record.deletion.history.line,model_record_deletion_history_line,record_deletion_history_log.group_record_deletion_log,1,0,0,0
