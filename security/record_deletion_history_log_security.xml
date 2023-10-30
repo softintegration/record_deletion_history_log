@@ -9,6 +9,7 @@
     <record id="group_record_deletion_log_archive" model="res.groups">
         <field name="name">Archive record deletion log</field>
         <field name="category_id" ref="base.module_category_hidden"/>
+        <field name="implied_ids" eval="[(4, ref('record_deletion_history_log.group_record_deletion_log'))]"/>
     </record>
 </data>
 </openerp>

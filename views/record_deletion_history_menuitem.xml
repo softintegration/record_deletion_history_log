@@ -4,8 +4,8 @@
         <menuitem action="record_deletion_history_action"
                   id="record_deletion_history_action_menu"
                   name="Record deletion history"
-                  parent="mail.mail_menu_technical"
-                  groups="base.user_admin"
-                  sequence="70"/>
+                  parent="base.menu_administration"
+                  groups="record_deletion_history_log.group_record_deletion_log"
+                  sequence="100"/>
 
 </odoo>

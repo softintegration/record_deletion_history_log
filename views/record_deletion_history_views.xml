@@ -14,7 +14,7 @@
                     <field name="res_id" />
                     <field name="user_id"/>
                     <field name="create_date" string="Date"/>
-                    <field name="active" widget="boolean_toggle"/>
+                    <field name="active" widget="boolean_toggle" groups="record_deletion_history_log.group_record_deletion_log_archive"/>
                 </tree>
             </field>
         </record>
