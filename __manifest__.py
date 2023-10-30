@@ -2,7 +2,7 @@
 
 {
     'name': 'Record deletion history logs',
-    'version': '1.0.1',
+    'version': '1.0.1.1',
     'author':'Soft-integration',
     'category': 'Security/Access rights',
     'description': "",
